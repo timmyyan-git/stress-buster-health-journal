@@ -6,12 +6,23 @@ import RandomTips from "./RandomTips"
 function MainPage (){
 
     return (
-        <div>
-        Main Page
-        <Dashboard />
-        <Resources />
-        <RandomTips />
+        <>
+        <h2>Home Page</h2>
+        <div className="dashboard-container">
+             <section className="resources-section">
+                <Resources />
+             </section>
+             <section className="dashboard-section">
+                <div className="dashboard">
+                <Dashboard />
+                </div>
+                <div className="random-section">
+                <RandomTips />
+                </div>
+             </section>         
+
         </div>
+        </>
     )
 }
 
