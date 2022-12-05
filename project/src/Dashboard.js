@@ -5,7 +5,7 @@ function Dashboard (){
     return (
         <div>
             <h3>Your <em>Stress Busters</em> Dashboard</h3>
-            <p>Daily average of stress buster habits</p>
+            <p>Daily average of stress busting habits</p>
             <section className="health-snap">
                 <section className="health-card">
                     <b>Nature</b>
