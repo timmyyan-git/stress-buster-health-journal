@@ -46,6 +46,21 @@ code {
 }
 
 .dashboard {
-  padding-top: .5rem;
+  padding-top: 1rem;
   padding-bottom:.5rem;
 }
+
+.health-snap {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.health-card {
+  flex-basis: 33.333333%;
+  border: 1px solid;
+  padding: .5rem;
+  border-radius: 10px;
+}
+
