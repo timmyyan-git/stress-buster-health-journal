@@ -64,3 +64,11 @@ code {
   border-radius: 10px;
 }
 
+#resource-image {
+  align-content: center;
+  max-width: 90%;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+

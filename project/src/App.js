@@ -9,6 +9,7 @@ function App() {
   const [randomQuote, setRandomQuote] = useState([])
 
   
+  // fetch Random Quote and update random quote
   
   useEffect(() => {
     fetch('https://api.quotable.io/random')

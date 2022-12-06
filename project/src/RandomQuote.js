@@ -5,8 +5,7 @@ function RandomQuote ({onRandomQuote}){
 
     return (
         <div>
-
-            <blockquote>&ldquo;{content}&rdquo; <footer>{author}</footer></blockquote>
+            <blockquote>&ldquo;{content}&rdquo; <footer>&mdash; {author}</footer></blockquote>
         </div>
     )
 }
