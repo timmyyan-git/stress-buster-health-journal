@@ -1,9 +1,9 @@
 import Dashboard from "./Dashboard"
 import Resources from "./Resources"
-import RandomTips from "./RandomTips"
+import RandomQuote from "./RandomQuote"
 
 
-function MainPage (){
+function MainPage ({onRandomQuote}){
 
     return (
         <>
@@ -17,7 +17,7 @@ function MainPage (){
                 <Dashboard />
                 </div>
                 <div className="random-section">
-                <RandomTips />
+                <RandomQuote onRandomQuote={onRandomQuote} />
                 </div>
              </section>         
 

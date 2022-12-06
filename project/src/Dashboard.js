@@ -1,5 +1,3 @@
-import HealthCard from "./HealthCard"
-
 function Dashboard (){
 
     return (
@@ -34,7 +32,7 @@ function Dashboard (){
                 <section className="health-card ">
                     <b>Sleep</b>
                     <div>Hours Slept: {0}</div>
-                    <div> Quality of Sleep: {0} / 10</div>
+                    <div>Quality of Sleep: {0} / 10</div>
                 </section>
                 <section className="health-card">
                     <b>Mental Healthcare</b>
@@ -42,8 +40,6 @@ function Dashboard (){
                     <div>Journal Completion: {0}</div>
                 </section>
             </section>
-
-            {/* <HealthCard /> */}
         </div>
     )
 }
