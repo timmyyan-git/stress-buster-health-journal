@@ -30,19 +30,25 @@ code {
   max-width: 25%;
   padding-top: 1rem;
   background-color: rgb(245, 245, 245);
+  padding-bottom: 1rem;
 }
 
 .dashboard-section {
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 70%;
 }
 
 .random-section {
     padding-top: .5rem;
     border-top: 2px dotted;
-    padding-bottom:.5rem;
+    padding-bottom: .5rem;  
+}
+
+#quote {
+  margin-top: 1.5rem;
+  font-size: larger;
+  line-height: 1.5;
 }
 
 .dashboard {
@@ -76,6 +82,5 @@ code {
   border-radius: 10px;
   padding: .3rem;
   background-color: rgb(255, 255, 255);
-  
 }
 
