@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import Header from "./Header"
 import NavBar from "./NavBar"
 import MainPage from "./MainPage"
@@ -7,6 +7,18 @@ import PreviousJournals from "./PreviousJournals"
 import Forum from "./Forum"
 
 function App() {
+  const [randomQuote, setRandomQuote] = useState([])
+
+  
+  // fetch Random Quote and update random quote
+  
+  useEffect(() => {
+    fetch('https://api.quotable.io/random')
+	.then(response => response.json())
+	.then(response => setRandomQuote(response))
+	.catch(err => console.error(err));
+  }, []) 
+
   const [page, setPage] = useState("/")
 
   function getCurrentPage () {
@@ -26,7 +38,7 @@ function App() {
       <Header />
       <NavBar onChangePage={setPage} />
       {getCurrentPage()}
-      {/* <MainPage />
+      {/* <MainPage onRandomQuote={randomQuote}/>
       <NewJournal />
       <PreviousJournals />
   <Forum /> */ }
