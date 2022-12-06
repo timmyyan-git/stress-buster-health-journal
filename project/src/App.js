@@ -9,7 +9,7 @@ import Forum from "./Forum"
 function App() {
   const [randomQuote, setRandomQuote] = useState([])
 
-  
+  console.log(randomQuote)
   // fetch Random Quote and update random quote
   
   useEffect(() => {
@@ -24,7 +24,7 @@ function App() {
   function getCurrentPage () {
     switch(page) {
       case "/":
-        return <MainPage />
+        return <MainPage onRandomQuote={randomQuote} />
       case "/NewJournal":
         return <NewJournal />
       case "/PreviousJournals":
@@ -35,13 +35,10 @@ function App() {
   }
   return (
     <div>
-      <Header />
-      <NavBar onChangePage={setPage} />
+      <Header onChangePage={setPage} />
       {getCurrentPage()}
-      {/* <MainPage onRandomQuote={randomQuote}/>
-      <NewJournal />
-      <PreviousJournals />
-  <Forum /> */ }
+
+      {/* <Forum /> */}
     </div>
   );
 }
