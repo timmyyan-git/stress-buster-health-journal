@@ -21,7 +21,7 @@ function Dashboard (){
                 </section>
                 <section className="health-card">
                     <b>Mindfulness</b>
-                    <div>Time Spent: {0}mins</div>
+                    <div>Time Spent: {0} mins</div>
                     <div>Mindful Breaks Taken: {0}</div>
                 </section>
                 <section className="health-card">

@@ -13,6 +13,17 @@ function Resources (){
                 id="resource-image">
                 </img>
             </a>
+            <br></br>
+            <p><em>Professional or Community Resources</em></p>
+            <p>Get Local Referrals: </p>
+            <a href="tel:+1-800-662-4357">
+                <button className="dashboard-button">SAMHSA's National Helpline</button>    
+            </a>
+            <p>Help is Always Available:</p>
+            <a href="tel:988">
+            <button className="dashboard-button">988 Suicide & Crisis Lifeline</button>
+            </a>
+
         </div>
     )
 }
