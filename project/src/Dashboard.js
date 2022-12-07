@@ -7,66 +7,40 @@ function Dashboard ({onJournalList}){
     const journalSleepData = onJournalList.map((journal) => {
         return parseFloat(journal.sleep)})
 
+    const sleepNum = journalSleepData.reduce((a, b) => a + b, 0) / journalSleepData.length
+
     const journalNatureData = onJournalList.map((journal) => {
         return parseFloat(journal.greenSpace)})
+
+     const natureNum = journalNatureData.reduce((a, b) => a + b, 0) / journalNatureData.length
 
     const journalExerciseData = onJournalList.map((journal) => {
         return parseFloat(journal.exercise)})
 
+    const exerciseNum = journalExerciseData.reduce((a, b) => a + b, 0) / journalExerciseData.length
+
     const journalSocialData = onJournalList.map((journal) => {
         return parseFloat(journal.social)})
+
+    const socialNum = journalSocialData.reduce((a, b) => a + b, 0) / journalSocialData.length
         
     const journalMindfulData = onJournalList.map((journal) => {
         return parseFloat(journal.mindful)}) 
+
+    const mindfulNum = journalMindfulData.reduce((a, b) => a + b, 0) / journalMindfulData.length
         
     const journalNutritionData = onJournalList.map((journal) => {
         return parseFloat(journal.nutrition)})   
+
+    const nutritionNum = (journalNutritionData.reduce((a, b) => a + b, 0) / journalNutritionData.length)
         
     const journalMentalData = onJournalList.map((journal) => {
         return parseFloat(journal.mentalHealth)})     
-        
-        console.log(journalMentalData)
 
-    //states to store dashboard data
-    const [sleepData, setSleepData] = useState(0)
-    const [natureData, setNatureData] = useState(0)
-    const [exerciseData, setExerciseData] = useState(0)
-    const [socialData, setSocialData] = useState(0)
-    const [mindfulData, setMindfulData] = useState(0)
-    const [nutritionData, setNutritionData] = useState(0)
-    const [mentalData, setMentalData] = useState(0)
-   
-   
-    // update Dashboard
+    const mentalNum = (journalMentalData.reduce((a, b) => a + b, 0) / journalMentalData.length)
 
-    useEffect(() => {
-        setSleepData((journalSleepData.reduce((a, b) => a + b, 0) / journalSleepData.length))
-    }, [])
     
-    useEffect(() => {
-        setNatureData((journalNatureData.reduce((a, b) => a + b, 0) / journalNatureData.length))
-    }, [])
-
-    useEffect(() => {
-        setExerciseData((journalExerciseData.reduce((a, b) => a + b, 0) / journalExerciseData.length))
-    }, [])
-
-    useEffect(() => {
-        setSocialData((journalSocialData.reduce((a, b) => a + b, 0) / journalSocialData.length))
-    }, [])
-
-    useEffect(() => {
-        setMindfulData((journalMindfulData.reduce((a, b) => a + b, 0) / journalMindfulData.length))
-    }, [])
-
-    useEffect(() => {
-        setNutritionData((journalNutritionData.reduce((a, b) => a + b, 0) / journalNutritionData.length))
-    }, [])
-
-    useEffect(() => {
-        setMentalData((journalMentalData.reduce((a, b) => a + b, 0) / journalMentalData.length))
-    }, [])
-
+    
 
     return (
         <div>
@@ -77,36 +51,36 @@ function Dashboard ({onJournalList}){
             <section className="health-snap">
                 <section id="nature-card" className="health-card">
                     <b>Nature</b>
-                    <div>Time in Green Space: {natureData.toFixed(1)} mins</div>
+                    <div>Time in Green Space: {natureNum? natureNum.toFixed(1) : '\u231B'} mins</div>
                 </section>
                 <section id="exercise-card"  className="health-card">
                     <b>Physical Activity</b>
-                    <div>Time Spent Exercising: {exerciseData.toFixed(1)} mins</div>
+                    <div>Time Spent Exercising: {exerciseNum? exerciseNum.toFixed(1) : '\u231B'} mins</div>
                     {/* <div>Average Steps: {0}</div>   */}
                 </section>
                 <section id="relationship-card"   className="health-card">
                     <b>Relationships</b>
                     {/* <div>Quality Time Spent: {0}</div> */}
-                    <div>Number of Positive Social Connections: {socialData.toFixed(1)}</div>
+                    <div>Number of Positive Social Connections: {socialNum? socialNum.toFixed(1) : '\u231B'}</div>
                 </section>
                 <section id="mindful-card" className="health-card">
                     <b>Mindfulness</b>
                     {/* <div>Time Spent: {0} mins</div> */}
-                    <div>Mindful Breaks Taken: {mindfulData.toFixed(1)}</div>
+                    <div>Mindful Breaks Taken: {mindfulNum? mindfulNum.toFixed(1) : '\u231B'}</div>
                 </section>
                 <section id="nutrition-card" className="health-card">
                     <b>Balanced Nutrition </b>
                     {/* <div>Water Consumption: {0} L </div> */}
-                    <div>Balanced Meal Rating: {nutritionData.toFixed(1)} / 10 </div>
+                    <div>Balanced Meal Rating: {nutritionNum?nutritionNum.toFixed(1) : '\u231B'} / 10 </div>
                 </section>
                 <section id="sleep-card" className="health-card ">
                     <b>Sleep</b>
-                    <div>Hours Slept: {sleepData.toFixed(1)}</div>
+                    <div>Hours Slept: {sleepNum? sleepNum.toFixed(1) : '\u231B'}</div>
                     {/* <div>Quality of Sleep: {0} / 10</div> */}
                 </section>
                 <section id="mental-card" className="health-card">
                     <b>Mental Healthcare</b>
-                    <div>Media Consumption: {mentalData.toFixed(1)} mins</div>
+                    <div>Media Consumption: {mentalNum? mentalNum.toFixed(1) : '\u231B'} mins</div>
                     {/* <div>Journal Completion: {0}</div> */}
                 </section>
             </section>

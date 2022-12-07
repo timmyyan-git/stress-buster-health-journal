@@ -32,8 +32,6 @@ h2 {
   padding-left: 4rem 
 }
 
-
-
 /*  header css */
 
 .header {
@@ -47,8 +45,6 @@ h2 {
 
 
 /* dashboard CSS */
-
-
 
 .dashboard-container {
   display: flex;
@@ -96,7 +92,7 @@ h2 {
   padding: 1rem;
   line-height: 1px;
   border-top-right-radius: 5px;
-  
+  border-bottom: 1px solid;
 }
 
 .random-section {
@@ -165,10 +161,6 @@ h2 {
   background-color: var(--seafoam-green);
   color: white
 }
-
-
-
-
 
 #samhsa-button:hover {
   background-color: white;

@@ -1,12 +1,15 @@
 function JournalCard ({onJournal}){
     
-    const {date, journalWriting, sleep, exercise, greenSpace, social, mindful, therapy, nutrition, mentalHealth} = onJournal
-    
+    const {date, quote,  journalWriting, sleep, exercise, greenSpace, social, mindful, therapy, nutrition, mentalHealth} = onJournal
+    const {content, author} = quote
 
     return (
         <li>
             <div>Date:{date}</div>
-            <div>Journal Prompt:</div>
+            <div>Journal Prompt:
+                <p>"{content}"</p>
+                <p> - {author}</p>
+            </div>
             <div>
                 <p>My thoughts: </p>
                 <p> {journalWriting}</p>

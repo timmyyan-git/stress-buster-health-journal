@@ -5,8 +5,11 @@ import ReactDOM from 'react-dom';
 
 
 
-function JournalForm ({onUpdateJournalList}){
+function JournalForm ({onUpdateJournalList, onRandomQuote}){
+    const {author, content} = onRandomQuote
 
+
+    let quote = {content, author}
 
     let curr = new Date();
     curr.setDate(curr.getDate());
@@ -14,8 +17,12 @@ function JournalForm ({onUpdateJournalList}){
 
     const [formData, setFormData] = useState({
         date: date,
-        sleep: "",
+        quote: {
+            content: content,
+            author: author
+        },
         journalWriting: "",
+        sleep: "",
         exercise: "0",
         greenSpace: "0",
         social: "0",
@@ -54,6 +61,7 @@ function JournalForm ({onUpdateJournalList}){
             <input type="date" name="date" onChange={onFormChange}
             defaultValue={date}
             ></input>
+            <input type="hidden" name="quote" defaultValue={quote}></input>
             <br></br>
             <label>Let it out...</label>
             <br/><br/>

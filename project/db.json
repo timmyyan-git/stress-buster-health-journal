@@ -1,56 +1,72 @@
 {
   "journals": [
     {
-      "date": "2022-12-07",
-      "sleep": "2",
-      "journalWriting": "Testing journal",
-      "exercise": "60",
-      "greenSpace": "60",
-      "social": "100",
-      "mindful": "5",
-      "nutrition": "6",
+      "date": "2022-12-08",
+      "quote": {
+        "content": "Time you enjoyed wasting was not wasted.",
+        "author": "John Lennon"
+      },
+      "journalWriting": "",
+      "sleep": "8",
+      "exercise": "90",
+      "greenSpace": "20",
+      "social": "3",
+      "mindful": "4",
+      "nutrition": "8",
       "mentalHealth": "90",
-      "therapy": "Yes",
-      "id": 2
-    },
-    {
-      "date": "2022-12-07",
-      "sleep": "1",
-      "journalWriting": "ugh",
-      "exercise": "1",
-      "greenSpace": "3",
-      "social": "1",
-      "mindful": "1",
-      "nutrition": "2",
-      "mentalHealth": "1",
-      "therapy": "No",
-      "id": 3
-    },
-    {
-      "date": "2022-12-07",
-      "sleep": "0",
-      "journalWriting": "testtttts",
-      "exercise": "0",
-      "greenSpace": "0",
-      "social": "0",
-      "mindful": "0",
-      "nutrition": "0",
-      "mentalHealth": "0",
-      "therapy": "",
-      "id": 4
+      "therapy": "no",
+      "id": 7
     },
     {
       "date": "2022-12-08",
-      "sleep": "5",
-      "journalWriting": "lala",
-      "exercise": "50",
-      "greenSpace": "20",
+      "quote": {
+        "content": "Maxim for life: You get treated in life the way you teach people to treat you.",
+        "author": "Wayne Dyer"
+      },
+      "journalWriting": "Tessst",
+      "sleep": "7",
+      "exercise": "90",
+      "greenSpace": "60",
       "social": "5",
       "mindful": "5",
       "nutrition": "7",
-      "mentalHealth": "30",
+      "mentalHealth": "120",
+      "therapy": "Yes",
+      "id": 8
+    },
+    {
+      "date": "2022-12-08",
+      "quote": {
+        "content": "Consider that not only do negative thoughts and emotions destroy our experience of peace, but they also undermine our health.",
+        "author": "Dalai Lama"
+      },
+      "journalWriting": "Great quote!",
+      "sleep": "6",
+      "exercise": "75",
+      "greenSpace": "30",
+      "social": "6",
+      "mindful": "2",
+      "nutrition": "7",
+      "mentalHealth": "90",
       "therapy": "No",
-      "id": 5
+      "id": 9
+    },
+    {
+      "date": "2022-12-08",
+      "quote": {
+        "content": "Life has no blessing like a prudent friend.",
+        "author": "Euripides"
+      },
+      "journalWriting": "Testsss",
+      "sleep": "9",
+      "exercise": "90",
+      "greenSpace": "90",
+      "social": "5",
+      "mindful": "3",
+      "nutrition": "8",
+      "mentalHealth": "90",
+      "therapy": "Yes",
+      "id": 10
     }
   ],
   "comments": [

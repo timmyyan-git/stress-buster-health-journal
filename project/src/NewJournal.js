@@ -12,7 +12,7 @@ function NewJournal ({onUpdateJournalList, onRandomQuote}){
            <div>
            <blockquote>&ldquo;{content}&rdquo; <footer>&mdash; {author}</footer></blockquote>
         </div>
-            <JournalForm onUpdateJournalList={onUpdateJournalList} />
+            <JournalForm onRandomQuote={onRandomQuote} onUpdateJournalList={onUpdateJournalList} />
         </div>
     )
 }
