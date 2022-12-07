@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from "react"
+import { Switch, Route } from "react-router-dom"
 import Header from "./Header"
 import MainPage from "./MainPage"
 import NewJournal from "./NewJournal"
 import PreviousJournals from "./PreviousJournals"
+import JournalForm from "./JournalForm"
 import Forum from "./Forum"
 
 function App() {
@@ -17,25 +19,30 @@ function App() {
 	.catch(err => console.error(err));
   }, []) 
 
+
   const [page, setPage] = useState("/")
 
-  function getCurrentPage () {
-    switch(page) {
-      case "/":
-        return <MainPage onRandomQuote={randomQuote} />
-      case "/NewJournal":
-        return <NewJournal />
-      case "/PreviousJournals":
-        return <PreviousJournals />
-      default: 
-        return <h1> 404 not found</h1>
-    }
-  }
   return (
     <div>
       <Header onChangePage={setPage} />
-      {getCurrentPage()}
-
+      <Switch>
+        <Route exact path="/">
+          <MainPage onRandomQuote={randomQuote} />
+        </Route>
+      <Route path="/NewJournal">
+        <NewJournal />
+      </Route>
+     <Route path="/PreviousJournals">
+      <PreviousJournals />
+     </Route>
+     <Route path="/JournalForm">
+      <JournalForm />
+     </Route>
+     <Route path="*">
+                    <h1>404 not found</h1>
+                </Route>
+            </Switch>
+     
       {/* <Forum /> */}
     </div>
   );

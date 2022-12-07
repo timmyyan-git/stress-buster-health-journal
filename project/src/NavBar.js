@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "react-router-dom"
 
 function NavBar({ onChangePage }) {
 
@@ -9,10 +9,10 @@ function handleLinkClick (e) {
 
     return (
         <nav>
-            <a onClick={handleLinkClick} href="/">MainPage</a>
-            <a onClick={handleLinkClick} href="/NewJournal"> New Journal </a>
-            <a onClick={handleLinkClick} href="/PreviousJournals">Journal List</a>
-            <a onClick={handleLinkClick} href="/JournalList">Stress-less Community</a>
+            <Link to="/">MainPage</Link>
+            <Link to="/NewJournal"> New Journal </Link>
+            <Link to="/PreviousJournals">Journal List</Link>
+            <Link to="/JournalForm">Stress-less Community</Link>
         </nav>
     );
         
