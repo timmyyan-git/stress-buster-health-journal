@@ -12,7 +12,7 @@ function handleLinkClick (e) {
             <NavLink exact to="/">MainPage</NavLink>
             <NavLink to="/NewJournal"> New Journal </NavLink>
             <NavLink to="/PreviousJournals">Journal List</NavLink>
-            <NavLink to="/JournalForm">Stress-less Community</NavLink>
+            <NavLink to="/Forum">Stress-less Community</NavLink>
         </nav>
     );
         

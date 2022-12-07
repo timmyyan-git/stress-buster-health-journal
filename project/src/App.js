@@ -37,8 +37,8 @@ function App() {
      <Route path="/PreviousJournals">
       <PreviousJournals />
      </Route>
-     <Route path="/JournalForm">
-      <JournalForm />
+     <Route path="/Forum">
+      <Forum />
      </Route>
      <Route path="*">
                     <h1>404 not found</h1>
