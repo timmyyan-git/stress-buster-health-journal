@@ -67,6 +67,23 @@
       "mentalHealth": "90",
       "therapy": "Yes",
       "id": 10
+    },
+    {
+      "date": "2022-12-08",
+      "quote": {
+        "content": "Anybody can make history. Only a great man can write it.",
+        "author": "Oscar Wilde"
+      },
+      "journalWriting": "Thoughts",
+      "sleep": "7",
+      "exercise": "50",
+      "greenSpace": "20",
+      "social": "4",
+      "mindful": "5",
+      "nutrition": "6",
+      "mentalHealth": "60",
+      "therapy": "No",
+      "id": 12
     }
   ],
   "comments": [

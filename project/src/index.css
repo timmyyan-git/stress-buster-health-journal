@@ -29,7 +29,7 @@ h2 {
   background-color: var(--logo-green);
   color:white;
   border: 2px solid black;
-  padding-left: 4rem 
+  padding-left: 4rem;
 }
 
 /*  header css */
@@ -194,6 +194,95 @@ h2 {
   border: none;
 }
 
+/* Previous Journals */
+
+.page-container {
+  background-color: var(--grey);
+}
+
+.journal-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  background-color: var(--cyan);
+  border-radius: 25px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.journal-card {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 2.5rem;
+  border: 1px solid;
+  max-width: 45%;
+  min-width: 45%;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background-color: var(--light-green);
+  box-shadow: 0px 0px 2px 2px;
+}
+
+#journal-date {
+  background-color: var(--grey);
+  max-width: 30%;
+  text-align:center;
+  margin: 1rem;
+}
+
+#journal-prompt {
+  background-color: var(--grey-blue);
+  border-radius: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  padding: 5px;
+
+  color: white;
+}
+
+#journal-thoughts {
+  background-color: var(--grey);
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+}
+
+.journal-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.metric-cards {
+  background-color: var(--grey);
+  max-width: 35%;
+  min-width: 35%;
+  border-radius: 25px;
+  text-align: center;
+  margin: 1em ;
+  padding-left: 20px;
+  padding-right: 20px; 
+}
+
+.metric {
+  background-color: var(--grey-blue);
+  color: white;
+  border-radius: 25px;
+  
+}
+
+
+
+/* Nav Bar */
 
 nav a.active {
   background-color: black;
