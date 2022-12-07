@@ -14,14 +14,14 @@ function JournalForm ({onUpdateJournalList}){
 
     const [formData, setFormData] = useState({
         date: date,
-        sleep: "",
+        sleep: "0",
         journalWriting: "",
-        exercise: "",
-        greenSpace: "",
-        social: "",
-        mindful: "",
-        nutrition: "",
-        mentalHealth: "",
+        exercise: "0",
+        greenSpace: "0",
+        social: "0",
+        mindful: "0",
+        nutrition: "0",
+        mentalHealth: "0",
         therapy: ""
     })
 
@@ -61,7 +61,7 @@ function JournalForm ({onUpdateJournalList}){
             <textarea type="text" name="journalWriting" id="writing"  onChange= {onFormChange}/>
             <br></br>
             <label htmlFor="type">How many hours did you sleep?</label>
-            <input type="number" id="time" step="1" min="0" max="24"  name="sleep" onChange= {onFormChange}>
+            <input type="number" id="time"  step="1" min="0" max="24"  name="sleep" onChange= {onFormChange}>
             </input>
 
                <br/>
