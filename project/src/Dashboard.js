@@ -70,39 +70,41 @@ function Dashboard ({onJournalList}){
 
     return (
         <div>
-            <h3>Your <em>Stress Buster</em> Dashboard</h3>
-            <p>Daily average of stress busting habits</p>
+            <section id="dashboard-title">
+            <h2><b>Your </b><em>Stress Buster</em> <b>Dashboard</b></h2>
+            <p>Daily Average of Stress Busting Habits</p>
+            </section>
             <section className="health-snap">
-                <section className="health-card">
+                <section id="nature-card" className="health-card">
                     <b>Nature</b>
                     <div>Time in Green Space: {natureData.toFixed(1)} mins</div>
                 </section>
-                <section className="health-card">
+                <section id="exercise-card"  className="health-card">
                     <b>Physical Activity</b>
                     <div>Time Spent Exercising: {exerciseData.toFixed(1)} mins</div>
                     {/* <div>Average Steps: {0}</div>   */}
                 </section>
-                <section className="health-card">
+                <section id="relationship-card"   className="health-card">
                     <b>Relationships</b>
                     {/* <div>Quality Time Spent: {0}</div> */}
                     <div>Number of Positive Social Connections: {socialData.toFixed(1)}</div>
                 </section>
-                <section className="health-card">
+                <section id="mindful-card" className="health-card">
                     <b>Mindfulness</b>
                     {/* <div>Time Spent: {0} mins</div> */}
                     <div>Mindful Breaks Taken: {mindfulData.toFixed(1)}</div>
                 </section>
-                <section className="health-card">
+                <section id="nutrition-card" className="health-card">
                     <b>Balanced Nutrition </b>
                     {/* <div>Water Consumption: {0} L </div> */}
                     <div>Balanced Meal Rating: {nutritionData.toFixed(1)} / 10 </div>
                 </section>
-                <section className="health-card ">
+                <section id="sleep-card" className="health-card ">
                     <b>Sleep</b>
                     <div>Hours Slept: {sleepData.toFixed(1)}</div>
                     {/* <div>Quality of Sleep: {0} / 10</div> */}
                 </section>
-                <section className="health-card">
+                <section id="mental-card" className="health-card">
                     <b>Mental Healthcare</b>
                     <div>Media Consumption: {mentalData.toFixed(1)} mins</div>
                     {/* <div>Journal Completion: {0}</div> */}
