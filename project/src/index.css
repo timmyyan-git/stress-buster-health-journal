@@ -84,3 +84,9 @@ code {
   background-color: rgb(255, 255, 255);
 }
 
+
+nav a.active {
+  background-color: black;
+  color: white;
+}
+
