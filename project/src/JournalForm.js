@@ -14,7 +14,7 @@ function JournalForm ({onUpdateJournalList}){
 
     const [formData, setFormData] = useState({
         date: date,
-        sleep: "0",
+        sleep: "",
         journalWriting: "",
         exercise: "0",
         greenSpace: "0",
