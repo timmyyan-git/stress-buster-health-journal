@@ -7,6 +7,8 @@ import PreviousJournals from "./PreviousJournals"
 import JournalForm from "./JournalForm"
 import Forum from "./Forum"
 
+
+// npm install react-router-dom@5
 function App() {
   const [randomQuote, setRandomQuote] = useState([])
 
@@ -30,7 +32,7 @@ function App() {
           <MainPage onRandomQuote={randomQuote} />
         </Route>
       <Route path="/NewJournal">
-        <NewJournal />
+        <NewJournal onRandomQuote={randomQuote}/>
       </Route>
      <Route path="/PreviousJournals">
       <PreviousJournals />
