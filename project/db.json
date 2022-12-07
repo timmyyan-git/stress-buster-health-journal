@@ -39,5 +39,23 @@
       "therapy": "",
       "id": 4
     }
+  ],
+  "comments": [
+    {
+        "comment": "rfdgdsg",
+        "likes": 7,
+        "id": 1
+      },
+      {
+        "comment": "vbcvbcb",
+        "likes": 2,
+        "id": 2
+      },
+      {
+        "comment": "cvbcbcb",
+        "likes": 3,
+        "id": 3
+      }
+
   ]
 }

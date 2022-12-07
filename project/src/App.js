@@ -41,9 +41,6 @@ function App() {
   function updateJournalList(updatedData){
     setJournalList([...journalList, updatedData])
     }
-
-
-    console.log(journalList)
   
 
   return (
