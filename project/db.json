@@ -1,17 +1,30 @@
 {
-    "journals": [
-        {
-            "id": 1,
-            "date": "12/7/2022",
-            "journalWriting": "Testing journal section",
-            "sleep": 8,
-            "exercise": "Yes",
-            "greenSpace": "",
-            "social": "Yes",
-            "mindful": "Yes",
-            "therapy": "no"
-            
-        }
-       
-    ]
+  "journals": [
+    {
+      "date": "2022-12-07",
+      "sleep": "2",
+      "journalWriting": "Testing journal",
+      "exercise": "60",
+      "greenSpace": "60",
+      "social": "100",
+      "mindful": "5",
+      "nutrition": "6",
+      "mentalHealth": "90",
+      "therapy": "Yes",
+      "id": 2
+    },
+    {
+      "date": "2022-12-07",
+      "sleep": "1",
+      "journalWriting": "ugh",
+      "exercise": "1",
+      "greenSpace": "3",
+      "social": "1",
+      "mindful": "1",
+      "nutrition": "2",
+      "mentalHealth": "1",
+      "therapy": "No",
+      "id": 3
+    }
+  ]
 }

@@ -1,17 +1,17 @@
 import JournalCard from "./JournalCard"
 
 function PreviousJournals ( {onJournalList} ){
+    
     const journalsToDisplay = onJournalList.map((journal) => { 
         return <JournalCard onJournal={journal} key={journal.id} />
     })
-    console.log(onJournalList)
 
 
     return (
         
 
         <ul>
-            <h1>Previous Journal</h1>
+            <h1>Your Journey So Far...</h1>
             {journalsToDisplay}
         </ul>
     )

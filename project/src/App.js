@@ -29,10 +29,19 @@ function App() {
   useEffect(() => {
     fetch("http://localhost:3000/journals")
       .then(response => response.json())
-      .then(response => setJournalList(response))
+      .then(journalData => setJournalList(journalData))
+      
   }, [])
 
- console.log(journalList)
+
+
+  // write a callback function to capture updated form data
+
+  function updateJournalList(updatedData){
+    
+    setJournalList([...journalList, updatedData])
+  
+  }
 
   return (
     <div>
@@ -42,7 +51,7 @@ function App() {
           <MainPage onRandomQuote={randomQuote} />
         </Route>
       <Route path="/NewJournal">
-        <NewJournal onRandomQuote={randomQuote}/>
+        <NewJournal onUpdateJournalList={updateJournalList} onRandomQuote={randomQuote}/>
       </Route>
      <Route path="/PreviousJournals">
       <PreviousJournals onJournalList={journalList} />

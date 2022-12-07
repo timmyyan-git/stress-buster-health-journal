@@ -1,7 +1,7 @@
 import JournalForm from "./JournalForm"
 // import moment from "moment";
 
-function NewJournal ({onRandomQuote}){
+function NewJournal ({onUpdateJournalList, onRandomQuote}){
     const {author, content} = onRandomQuote
     return (
         <div>
@@ -12,7 +12,7 @@ function NewJournal ({onRandomQuote}){
            <div>
            <blockquote>&ldquo;{content}&rdquo; <footer>&mdash; {author}</footer></blockquote>
         </div>
-            <JournalForm />
+            <JournalForm onUpdateJournalList={onUpdateJournalList} />
         </div>
     )
 }

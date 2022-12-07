@@ -4,9 +4,9 @@ function Resources (){
 
     return (
         <div>
-            <p>
+            
             <b><em>Resources</em></b>
-           </p>
+           
     
             <a href="https://www.acesaware.org/wp-content/uploads/2020/12/Roadmap-For-Resilience_CA-Surgeon-Generals-Report-on-ACEs-Toxic-Stress-and-Health.pdf" 
             target="_blank">
@@ -16,7 +16,7 @@ function Resources (){
                 id="resource-image">
                 </img>
             </a>
-            <br></br>
+            {/* <br></br> */}
             <p><em>Professional or Community Resources</em></p>
             <p>Get Local Referrals: </p>
             <a href="tel:+1-800-662-4357">
