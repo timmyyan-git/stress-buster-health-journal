@@ -1,7 +1,7 @@
 function JournalCard ({onJournal}){
     
     const {date, journalWriting, sleep, exercise, greenSpace, social, mindful, therapy, nutrition, mentalHealth} = onJournal
-    console.log(journalWriting)
+    
 
     return (
         <li>

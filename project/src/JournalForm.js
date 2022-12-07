@@ -42,9 +42,12 @@ function JournalForm ({onUpdateJournalList}){
                     body: JSON.stringify(formData)
                 }) 
                     .then(response => response.json())
-                    .then(updatedData => onUpdateJournalList(updatedData))
+                    .then(updatedData => {
+                        onUpdateJournalList(updatedData)
+                
+                    
+                    })
             }
-            console.log(formData)
          
             return (
                 <div>

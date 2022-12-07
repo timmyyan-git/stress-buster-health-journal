@@ -3,7 +3,8 @@ import Resources from "./Resources"
 import RandomQuote from "./RandomQuote"
 
 
-function MainPage ({onRandomQuote}){
+function MainPage ({onJournalList, onRandomQuote, onPulledData}){
+
 
     return (
         <>
@@ -14,7 +15,7 @@ function MainPage ({onRandomQuote}){
              </section>
              <section className="dashboard-section">
                 <div className="dashboard">
-                <Dashboard />
+                <Dashboard onJournalList={onJournalList} onPulledData={onPulledData} />
                 </div>
                 <div className="random-section">
                 <RandomQuote onRandomQuote={onRandomQuote} />

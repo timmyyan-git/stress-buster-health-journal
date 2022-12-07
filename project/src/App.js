@@ -15,6 +15,7 @@ function App() {
   const [randomQuote, setRandomQuote] = useState([])
   const [journalList, setJournalList] = useState([])
 
+
   // fetch Random Quote and update random quote
   
   useEffect(() => {
@@ -38,17 +39,19 @@ function App() {
   // write a callback function to capture updated form data
 
   function updateJournalList(updatedData){
-    
     setJournalList([...journalList, updatedData])
+    }
+
+
+ 
   
-  }
 
   return (
     <div>
       <Header onChangePage={setPage} />
       <Switch>
         <Route exact path="/">
-          <MainPage onRandomQuote={randomQuote} />
+          <MainPage onJournalList={journalList}  onRandomQuote={randomQuote} />
         </Route>
       <Route path="/NewJournal">
         <NewJournal onUpdateJournalList={updateJournalList} onRandomQuote={randomQuote}/>

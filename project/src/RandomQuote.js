@@ -1,7 +1,6 @@
 function RandomQuote ({onRandomQuote}){
-console.log(onRandomQuote)
     const {author, content} = onRandomQuote
-//     console.log(author)
+
 
     return (
         <div id="quote">

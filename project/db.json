@@ -25,6 +25,32 @@
       "mentalHealth": "1",
       "therapy": "No",
       "id": 3
+    },
+    {
+      "date": "2022-12-07",
+      "sleep": "1",
+      "journalWriting": "testing",
+      "exercise": "1",
+      "greenSpace": "1",
+      "social": "1",
+      "mindful": "1",
+      "nutrition": "1",
+      "mentalHealth": "1",
+      "therapy": "Yes",
+      "id": 4
+    },
+    {
+      "date": "2022-12-07",
+      "sleep": "0",
+      "journalWriting": "tessssst",
+      "exercise": "0",
+      "greenSpace": "30",
+      "social": "0",
+      "mindful": "0",
+      "nutrition": "0",
+      "mentalHealth": "0",
+      "therapy": "Yes",
+      "id": 5
     }
   ]
 }
