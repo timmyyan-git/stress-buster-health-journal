@@ -8,8 +8,6 @@ function PreviousJournals ( {onJournalList} ){
 
 
     return (
-        
-
         <ul>
             <h1>Your Journey So Far...</h1>
             {journalsToDisplay}

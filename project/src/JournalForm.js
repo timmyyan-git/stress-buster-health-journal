@@ -44,9 +44,8 @@ function JournalForm ({onUpdateJournalList}){
                     .then(response => response.json())
                     .then(updatedData => {
                         onUpdateJournalList(updatedData)
-                
-                    
                     })
+                event.target.reset()
             }
          
             return (

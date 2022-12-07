@@ -1,17 +1,25 @@
-/* body {
+
+
+:root {
+  --cyan: #079aa8;
+  --grey-blue: #496380;
+  --seafoam-green: #54b696;
+  --dark-green: #5a9b6d;
+  --light-seafoam-green: #67b2ab;
+  --wine-purple: #711c52;
+  --purple: #8428b4;
+  --burnt-red: #8d2213;
+  --light-green: #9ecfad;
+  --grey: #e1e1e1;
+  --orange: #e9612a;
+}
+
+body {
+
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  font-family: 'Cardo'
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
-
 
 
 /* dashboard CSS */

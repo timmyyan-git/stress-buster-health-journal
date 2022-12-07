@@ -38,24 +38,36 @@
       "mentalHealth": "0",
       "therapy": "",
       "id": 4
+    },
+    {
+      "date": "2022-12-08",
+      "sleep": "5",
+      "journalWriting": "lala",
+      "exercise": "50",
+      "greenSpace": "20",
+      "social": "5",
+      "mindful": "5",
+      "nutrition": "7",
+      "mentalHealth": "30",
+      "therapy": "No",
+      "id": 5
     }
   ],
   "comments": [
     {
-        "comment": "rfdgdsg",
-        "likes": 7,
-        "id": 1
-      },
-      {
-        "comment": "vbcvbcb",
-        "likes": 2,
-        "id": 2
-      },
-      {
-        "comment": "cvbcbcb",
-        "likes": 3,
-        "id": 3
-      }
-
+      "comment": "rfdgdsg",
+      "likes": 8,
+      "id": 1
+    },
+    {
+      "comment": "vbcvbcb",
+      "likes": 3,
+      "id": 2
+    },
+    {
+      "comment": "cvbcbcb",
+      "likes": 4,
+      "id": 3
+    }
   ]
 }
