@@ -5,7 +5,7 @@ function Resources (){
     return (
         <div>
             
-            <b><em>Resources</em></b>
+            <h4><b><em>Resources</em></b></h4>
            
     
             <a href="https://www.acesaware.org/wp-content/uploads/2020/12/Roadmap-For-Resilience_CA-Surgeon-Generals-Report-on-ACEs-Toxic-Stress-and-Health.pdf" 
