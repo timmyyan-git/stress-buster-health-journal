@@ -1,5 +1,5 @@
 import JournalForm from "./JournalForm"
-import moment from "moment";
+// import moment from "moment";
 
 function NewJournal ({onRandomQuote}){
     const {author, content} = onRandomQuote

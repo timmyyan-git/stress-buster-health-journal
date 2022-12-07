@@ -10,19 +10,29 @@ import Forum from "./Forum"
 
 // npm install react-router-dom@5
 function App() {
+  // States
+  const [page, setPage] = useState("/")
   const [randomQuote, setRandomQuote] = useState([])
+  const [journalList, setJournalList] = useState([])
 
   // fetch Random Quote and update random quote
   
   useEffect(() => {
     fetch('https://api.quotable.io/random')
-	.then(response => response.json())
-	.then(response => setRandomQuote(response))
-	.catch(err => console.error(err));
+      .then(response => response.json())
+      .then(response => setRandomQuote(response))
+      .catch(err => console.error(err));
   }, []) 
 
+  // fetch journals from db.json
 
-  const [page, setPage] = useState("/")
+  useEffect(() => {
+    fetch("http://localhost:3000/journals")
+      .then(response => response.json())
+      .then(response => setJournalList(response))
+  }, [])
+
+ console.log(journalList)
 
   return (
     <div>
@@ -35,7 +45,7 @@ function App() {
         <NewJournal onRandomQuote={randomQuote}/>
       </Route>
      <Route path="/PreviousJournals">
-      <PreviousJournals />
+      <PreviousJournals onJournalList={journalList} />
      </Route>
      <Route path="/Forum">
       <Forum />

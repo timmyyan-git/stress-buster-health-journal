@@ -1,5 +1,17 @@
 {
     "journals": [
+        {
+            "id": 1,
+            "date": "12/7/2022",
+            "journalWriting": "Testing journal section",
+            "sleep": 8,
+            "exercise": "Yes",
+            "greenSpace": "",
+            "social": "Yes",
+            "mindful": "Yes",
+            "therapy": "no"
+            
+        }
        
     ]
 }

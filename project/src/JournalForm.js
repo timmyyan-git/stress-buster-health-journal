@@ -34,7 +34,7 @@ function JournalForm (){
             <select id="type" value={sleep} onChange= {e => setSleep(e.target.value)}>
             <option>Select an Option</option>
              <option> 0 Hours</option>
-            <option > 1 Hour</option>
+             <option > 1 Hour</option>
              <option> 2 Hours</option>
              <option> 3 Hours</option>
              <option> 4 Hours</option>
