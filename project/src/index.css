@@ -36,35 +36,6 @@ h2 {
   text-align: center;
 }
 
-/*  header css */
-
-.header {
-  background-color: var(--light-seafoam-green);
-  max-height: 10em;
-}
-#subHeading {
-  position: absolute;
-  top: 5rem;
-  left: 15rem;
-  right: 2px;
-  font-size: 20px;
-  text-shadow: 3px 3px 5px white;
-}
-
-#spicyTitle {
-  font-size: 3em;
-  text-shadow: 3px 5px 5px white;
-  position: absolute;
-  top: 5px;
-  left: 175px;
-  right: 2px;
-
-  height: 100px;
-}
-
-#logo {
-  max-height: 10em;
-}
 
 
 /* dashboard CSS */
@@ -104,7 +75,9 @@ h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color: var(--grey);
+  background-color: white;
+  border: 1px solid;
+  border-radius: 6px;
 }
 
 #sbDash {
@@ -128,19 +101,19 @@ h2 {
 
 .random-section {
   margin-top: 5%;
-    padding-top: 1rem;
-    border-top: 1px solid;
-    text-align: center;
-    padding-bottom: 1rem; 
-    background-color: var(--light-green); 
-    border-bottom-right-radius: 5px;
+  padding-top: 1rem;
+  border-top: 1px solid;
+  text-align: center;
+  padding-bottom: 1rem; 
+  background-color: var(--light-green); 
+  border-bottom-right-radius: 5px;
 }
 
 #quote {
-  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   font-size: larger;
   line-height: 1.5;
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 10px 10px 5px black;
 }
 
 .health-snap {
@@ -229,7 +202,7 @@ h2 {
 /* Previous Journals */
 
 .page-container {
-  background-color: var(--grey);
+  background-color: white;
 }
 
 .journal-container {
@@ -271,7 +244,8 @@ h2 {
   margin-right: 10%;
   text-align: center;
   padding: 5px;
-
+  box-shadow: 10px 10px 5px black;
+  margin-bottom: 1rem;
   color: white;
 }
 
@@ -312,6 +286,52 @@ h2 {
   
 }
 
+/*  header css */
+
+.header {
+  background-color: var(--light-seafoam-green);
+  max-height: 10em;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+#main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#subHeading {
+  /* position: absolute;
+  top: 5rem;
+  left: 15rem;
+  right: 2px; */
+  font-size: 20px;
+  text-shadow: 3px 3px 5px white;
+  width: max-content;
+  margin-left: 3rem;
+  line-height: 1px;
+
+}
+
+#spicyTitle {
+  font-size: 3em;
+  text-shadow: 3px 5px 5px white;
+  line-height: 1px;
+  margin-left: 1rem
+
+  /* position: absolute;
+  top: 5px;
+  left: 175px;
+  right: 2px;
+  height: 100px; */
+}
+
+#logo {
+  max-height: 10em;
+}
 
 /* Nav Bar */
 
@@ -320,19 +340,35 @@ nav a.active {
   color: white;
 }
 
-nav {
-  color: white;
+/* nav {
+  color: white; 
   position:absolute;
   left: 57rem;
-  top:8.5rem;
-}
+  top: 8.5rem;
+} */
 
-
-#link {
-  padding-left: 1rem;
-  font-size: large;
-}
+#nav-bar {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  max-height: 1.75rem;
+  padding:.25rem;
+  margin-left: 20%;
+  margin-top: 7rem;
+  width: max-content;
+  min-width: max-content;
   
+}
+
+.link {
+  padding: 0px 1px 4px 4px;
+  font-size: large;
+
+}
+
+/* New Journal */
 
 #prompt {
   flex-basis: 33.333333%;
@@ -346,17 +382,16 @@ nav {
   margin-top: 1rem;
 }
 
-#quote {
-  padding: .5rem;
+#new-journal-quote {
+  padding: 3rem;
   border-radius: 25px;
-  margin-left: 15em;
-  margin-right: 15em;
-  margin-top: 1rem;
   background-color: var(--grey-blue);
   color: white;
   text-align: center;
   font-size: large;
+  box-shadow: 10px 10px 5px black;
 }
+
 #entirePageColor{
   background-color: var(--cyan);
   margin-left: 2em;
@@ -378,11 +413,11 @@ nav {
   border-radius: 25px;
   width: 20px;
   height: 70px;
-
+  
   margin-bottom: 2em ;
   margin-top: 1em;
   background-color: var(--grey);
-  box-shadow: 1px 1px 1gpx lightblue;
+  box-shadow: 1px 1px 1px lightblue;
   
 }
 

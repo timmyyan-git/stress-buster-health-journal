@@ -15,7 +15,7 @@ function NewJournal ({onUpdateJournalList, onRandomQuote}){
             <br></br>
             <br></br>
            <div>
-           <blockquote id="quote">&ldquo;{content}&rdquo; <footer>&mdash; {author}</footer></blockquote>
+           <blockquote id="new-journal-quote">&ldquo;{content}&rdquo; <footer>&mdash; {author}</footer></blockquote>
            </div>
            <br></br>
            <br></br>

@@ -101,6 +101,23 @@
       "mentalHealth": "4",
       "therapy": "Yes",
       "id": 13
+    },
+    {
+      "date": "2022-12-09",
+      "quote": {
+        "content": "Vanity can easily overtake wisdom. It usually overtakes common sense.",
+        "author": "Julian Casablancas"
+      },
+      "journalWriting": "Testing",
+      "sleep": "9",
+      "exercise": "60",
+      "greenSpace": "15",
+      "social": "5",
+      "mindful": "5",
+      "nutrition": "7",
+      "mentalHealth": "90",
+      "therapy": "No",
+      "id": 14
     }
   ],
   "comments": [
@@ -118,6 +135,11 @@
       "comment": "cvbcbcb",
       "likes": 4,
       "id": 3
+    },
+    {
+      "comment": "test",
+      "likes": 3,
+      "id": 4
     }
   ]
 }
