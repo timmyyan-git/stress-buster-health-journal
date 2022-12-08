@@ -57,8 +57,10 @@ function Forum() {
 
     return (
         <div className={styles.container}>
-            <h2 className={styles.pageTitle}>Forum</h2>
-            <div className={styles.center}>
+            <h2 className="page-title">Forum</h2>
+            <div id={styles["comment-page-container"]}>
+                <div className={styles.center}>
+                
                 <div className={styles.commentBox}>
                     <h1 className={styles.commentTitle}>Post a Comment</h1>
                     <CommentForm className={styles.commentForm} addComment={addComment} />
@@ -74,6 +76,7 @@ function Forum() {
                         Comments
                     </h1>
                     <div className={styles.comments}>{renderComments()}</div>
+                </div>
                 </div>
             </div>
         </div>

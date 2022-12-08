@@ -71,6 +71,7 @@ function JournalForm({ onUpdateJournalList, onRandomQuote }) {
             name="journalWriting"
             id="writing"
             rows="15"
+            cols="100"
             onChange={onFormChange}
           />
         </div>

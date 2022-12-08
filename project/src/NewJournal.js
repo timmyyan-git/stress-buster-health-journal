@@ -4,25 +4,24 @@ import JournalForm from "./JournalForm"
 function NewJournal ({onUpdateJournalList, onRandomQuote}){
     const {author, content} = onRandomQuote
     return (
-        <div>
-           <h2 className="page-title"> New Journal Entry</h2> 
+        <div id="new-journal-container">
+                <h2 className="page-title"> New Journal Entry</h2> 
             <section id="entirePageColor"> 
-            
-
-            <section id="prompt">
-           <h1>Reflecting on your day can help release pent up tension. <br/>
-            write freely or use our daily quote as a prompt! </h1>
-            <br></br>
-            <br></br>
-           <div>
-           <blockquote id="new-journal-quote">&ldquo;{content}&rdquo; <footer>&mdash; {author}</footer></blockquote>
-           </div>
-           <br></br>
-           <br></br>
-           </section>
-           <section id="journalForm">
-            <JournalForm onRandomQuote={onRandomQuote} onUpdateJournalList={onUpdateJournalList} />
-            </section>
+                <br></br>
+                <section id="prompt">
+                    <div id="prompt-container">
+                        <h2>Write freely or use our daily quote as a prompt! </h2>
+                        <p>Reflecting on your day can help release pent up tension. </p>
+                        <br></br>
+                    </div>
+                    <div>
+                        <blockquote id="new-journal-quote">&ldquo;{content}&rdquo; <footer>&mdash; {author}</footer></blockquote>
+                    </div>
+                        <br></br>
+                </section>
+                <section id="journalForm">
+                    <JournalForm onRandomQuote={onRandomQuote} onUpdateJournalList={onUpdateJournalList} />
+                </section>
            </section>
         </div>
     )

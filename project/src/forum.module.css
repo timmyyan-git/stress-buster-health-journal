@@ -1,6 +1,13 @@
 .container {
-    background-color: lightsalmon;
-    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+#comment-page-container {
+    background-color: var(--burnt-orange);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px
 }
 
 .commentsContainer {
@@ -12,7 +19,8 @@
     justify-content: center;
     width: 50%;
     border-radius: 20px;
-    background-color: #4598a6;
+    background-color: var(--cyan);
+    margin-bottom: 2rem;
 }
 
 .comments {
@@ -30,10 +38,12 @@
 }
 
 .commentBox {
-    background-color: #4e627d;
+    background-color: var(--grey-blue);
     width: 50%;
     border-radius: 20px;
     padding: 15px 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .commentForm {
@@ -53,3 +63,15 @@
     align-items: center;
     justify-content: center;
 }
+
+#comment-submit:hover {
+    background-color: white;
+    color:rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+    font-weight: bold;
+  }
+
+  #comment-likes:hover {
+    box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+    font-weight: bold;
+  }

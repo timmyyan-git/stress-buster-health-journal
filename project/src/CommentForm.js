@@ -1,6 +1,7 @@
 import { useState } from "react";
+import styles from "./forum.module.css"; 
 
-const styles = {
+const style = {
     container: {
         display: "flex",
         flexDirection: "column",
@@ -17,9 +18,10 @@ const styles = {
     submit: {
         height: "40px",
         width: "95px",
-        backgroundColor: "orange",
+        backgroundColor: "#d1774c",
         borderRadius: "30px",
         color: "white",
+        border: "none"
     },
 };
 
@@ -27,18 +29,20 @@ function CommentForm({ addComment }) {
     const [comment, setComment] = useState("");
 
     return (
-        <div style={styles.container}>
+        
+        <div style={style.container}>
             <textarea
-                style={styles.textBox}
+                style={style.textBox}
                 rows="5"
                 cols="100"
                 placeholder="Enter comment here..."
                 onChange={(e) => setComment(e.target.value)}
             ></textarea>
-            <button style={styles.submit} onClick={() => addComment(comment)}>
+            <button id={styles["comment-submit"]} style={style.submit} onClick={() => addComment(comment)}>
                 Submit!
             </button>
         </div>
+      
     );
 }
 

@@ -1,7 +1,7 @@
 {
   "journals": [
     {
-      "date": "2022-12-08",
+      "date": "2022-12-05",
       "quote": {
         "content": "Time you enjoyed wasting was not wasted.",
         "author": "John Lennon"
@@ -18,7 +18,7 @@
       "id": 7
     },
     {
-      "date": "2022-12-08",
+      "date": "2022-12-06",
       "quote": {
         "content": "Maxim for life: You get treated in life the way you teach people to treat you.",
         "author": "Wayne Dyer"
@@ -35,7 +35,7 @@
       "id": 8
     },
     {
-      "date": "2022-12-08",
+      "date": "2022-12-07",
       "quote": {
         "content": "Consider that not only do negative thoughts and emotions destroy our experience of peace, but they also undermine our health.",
         "author": "Dalai Lama"
@@ -69,7 +69,7 @@
       "id": 10
     },
     {
-      "date": "2022-12-08",
+      "date": "2022-12-09",
       "quote": {
         "content": "Anybody can make history. Only a great man can write it.",
         "author": "Oscar Wilde"
@@ -91,7 +91,7 @@
         "content": "Keep your eyes on the stars and your feet on the ground.",
         "author": "Theodore Roosevelt"
       },
-      "journalWriting": "ihhihihih",
+      "journalWriting": "Hello!",
       "sleep": "4",
       "exercise": "3",
       "greenSpace": "1",
@@ -118,28 +118,45 @@
       "mentalHealth": "90",
       "therapy": "No",
       "id": 14
+    },
+    {
+      "date": "2022-12-09",
+      "quote": {
+        "content": "We should not judge people by their peak of excellence; but by the distance they have traveled from the point where they started.",
+        "author": "Henry Ward Beecher"
+      },
+      "journalWriting": "Final test",
+      "sleep": "8",
+      "exercise": "30",
+      "greenSpace": "30",
+      "social": "7",
+      "mindful": "4",
+      "nutrition": "8",
+      "mentalHealth": "0",
+      "therapy": "",
+      "id": 15
     }
   ],
   "comments": [
     {
-      "comment": "rfdgdsg",
-      "likes": 13,
+      "comment": "Test",
+      "likes": 17,
       "id": 1
     },
     {
-      "comment": "vbcvbcb",
-      "likes": 3,
+      "comment": "TEST!",
+      "likes": 4,
       "id": 2
     },
     {
-      "comment": "cvbcbcb",
+      "comment": "TEST...",
       "likes": 4,
       "id": 3
     },
     {
-      "comment": "test",
-      "likes": 3,
-      "id": 4
+      "comment": "Final test!",
+      "likes": 40,
+      "id": 5
     }
   ]
 }

@@ -111,9 +111,17 @@ h2 {
 
 #quote {
   margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
   font-size: larger;
+  padding:1rem;
   line-height: 1.5;
   box-shadow: 10px 10px 5px black;
+  border-radius: 10px;
+  background-color: var(--grey-blue);
+  color: white;
+  
+ 
 }
 
 .health-snap {
@@ -165,6 +173,14 @@ h2 {
 #mental-card {
   background-color: var(--seafoam-green);
   color: white
+}
+
+.metric-container {
+  background-color: white;
+  color: black;
+  margin-left:5rem;
+  margin-right: 5rem;
+  border-radius: 5px;
 }
 
 #samhsa-button:hover {
@@ -304,10 +320,7 @@ h2 {
 }
 
 #subHeading {
-  /* position: absolute;
-  top: 5rem;
-  left: 15rem;
-  right: 2px; */
+ 
   font-size: 20px;
   text-shadow: 3px 3px 5px white;
   width: max-content;
@@ -322,11 +335,6 @@ h2 {
   line-height: 1px;
   margin-left: 1rem
 
-  /* position: absolute;
-  top: 5px;
-  left: 175px;
-  right: 2px;
-  height: 100px; */
 }
 
 #logo {
@@ -340,12 +348,6 @@ nav a.active {
   color: white;
 }
 
-/* nav {
-  color: white; 
-  position:absolute;
-  left: 57rem;
-  top: 8.5rem;
-} */
 
 #nav-bar {
   background-color: white;
@@ -365,13 +367,31 @@ nav a.active {
 .link {
   padding: 0px 1px 4px 4px;
   font-size: large;
+}
 
+.nav-button {
+  background-color: var(--burnt-orange);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px
 }
 
 /* New Journal */
 
+#new-journal-container {
+  background-color: white;
+}
+
+#entirePageColor{
+  background-color: var(--cyan);
+  margin: 2em;
+  border-radius: 10px;
+}
+
 #prompt {
-  flex-basis: 33.333333%;
+  display: flex;
+  flex-direction:column;
   padding: .5rem;
   border-radius: 25px;
   margin-left: 10em;
@@ -379,7 +399,12 @@ nav a.active {
   background-color: var(--seafoam-green);
   color: white;
   text-align: center;
-  margin-top: 1rem;
+  
+}
+
+#prompt-container {
+  background-color: var(--burnt-orange);
+  border-radius: 25px
 }
 
 #new-journal-quote {
@@ -392,13 +417,6 @@ nav a.active {
   box-shadow: 10px 10px 5px black;
 }
 
-#entirePageColor{
-  background-color: var(--cyan);
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-top: 2em;
-  border-radius: 10px;
-}
 
 #journalForm {
   background-color: var(--dark-green);
@@ -421,8 +439,6 @@ nav a.active {
   
 }
 
-
-
 .question-snap {
   background-color: #079aa8;
   display: flex;
@@ -439,16 +455,35 @@ nav a.active {
 #type,
 #time {
   margin-top: 10px;
+  min-width: 8rem;
+  max-width: 8rem;
+  border-radius: 10px;
+  text-align: center
+
   
 }
 #journalButton {
-  height: 30px;
-  margin-top: 1em;
-  margin-bottom: 1em;
   
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-top: .5em;
+  margin-bottom: 2em;
+  background-color: var(--burnt-orange);
+  border-radius: 40px;
+  color: white;
+  border: none;
+  font-size: large;
+  font-weight: bold;
   
+}
 
-  
+#journalButton:hover {
+  background-color: white;
+  color:rgb(0, 0, 0);
+  box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .clr-blue {
@@ -464,10 +499,13 @@ border-radius: 25px;
 
 #journalDate {
   margin-left: 13rem;
-  background: var(--grey);
+  background: white;
+  text-align: center;
   outline: none;
   border: none;
+  border-radius: 5px;
   font-size: 20px;
+  font-family: cardo;
   margin-top: 2rem;
 }
 
@@ -480,6 +518,10 @@ border-radius: 25px;
   text-shadow: 2px 2px 5px white;
 }
 
+#writing {
+  padding-left: 20px;
+  padding-right: 20px
+}
 
 
 
