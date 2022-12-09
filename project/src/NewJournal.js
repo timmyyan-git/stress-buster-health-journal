@@ -5,8 +5,8 @@ function NewJournal ({onUpdateJournalList, onRandomQuote}){
     const {author, content} = onRandomQuote
     return (
         <div>
-            <section id="newJournalPage"> 
            <h2 className="page-title"> New Journal Entry</h2> 
+            <section id="entirePageColor"> 
             
 
             <section id="prompt">
@@ -20,9 +20,10 @@ function NewJournal ({onUpdateJournalList, onRandomQuote}){
            <br></br>
            <br></br>
            </section>
-           </section>
-        
+           <section id="journalForm">
             <JournalForm onRandomQuote={onRandomQuote} onUpdateJournalList={onUpdateJournalList} />
+            </section>
+           </section>
         </div>
     )
 }

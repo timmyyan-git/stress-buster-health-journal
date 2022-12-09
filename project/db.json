@@ -84,12 +84,29 @@
       "mentalHealth": "60",
       "therapy": "No",
       "id": 12
+    },
+    {
+      "date": "2022-12-09",
+      "quote": {
+        "content": "Keep your eyes on the stars and your feet on the ground.",
+        "author": "Theodore Roosevelt"
+      },
+      "journalWriting": "ihhihihih",
+      "sleep": "4",
+      "exercise": "3",
+      "greenSpace": "1",
+      "social": "12",
+      "mindful": "9",
+      "nutrition": "8",
+      "mentalHealth": "4",
+      "therapy": "Yes",
+      "id": 13
     }
   ],
   "comments": [
     {
       "comment": "rfdgdsg",
-      "likes": 8,
+      "likes": 13,
       "id": 1
     },
     {
