@@ -8,11 +8,19 @@ const styles = {
     },
     textBox: {
         marginBottom: "20px",
+        width: "50%",
+        borderRadius: "30px",
     },
     submit: {
-        height: "50px",
-        width: "200px",
+        height: "40px",
+        width: "95px",
+        backgroundColor: "orange",
+        borderRadius: "30px",
+        color: "white",
     },
+    // textarea::placeholder: { 
+        
+    // }
 };
 
 function CommentForm({ addComment }) {
@@ -28,7 +36,7 @@ function CommentForm({ addComment }) {
                 onChange={(e) => setComment(e.target.value)}
             ></textarea>
             <button style={styles.submit} onClick={() => addComment(comment)}>
-                Submit
+                Submit!
             </button>
         </div>
     );

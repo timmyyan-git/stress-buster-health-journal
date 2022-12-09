@@ -1,0 +1,43 @@
+.container {
+    background-color: lightsalmon;
+    height: 100vh;
+}
+
+.commentsContainer {
+    padding: "10px 15px";
+    border: "1px solid black";
+    display: "flex";
+    flex-direction: "column";
+    align-items: "center";
+    margin-top: "20px";
+    margin: 0 auto;
+}
+
+.comments {
+    width: "100%";
+}
+
+.pageTitle {
+    background-color: var(--logo-green);
+    color:white;
+    border: 2px solid black;
+    padding-left: 4rem;
+}
+
+.commentBox {
+    background-color: darkblue;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.commentForm {
+    width: 50%;
+    background-color: black;
+
+}
+
+.commentTitle {
+    color: white;
+}
