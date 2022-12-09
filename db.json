@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1,
+      "likes": null
+    },
+    {
+      "comment": "hghggj",
+      "likes": 4,
+      "id": 2
+    },
+    {
+      "comment": "hghggj",
+      "likes": 0,
+      "id": 3
+    },
+    {
+      "comment": "gfgs",
+      "likes": 0,
+      "id": 4
+    },
+    {
+      "comment": "dsfsd",
+      "likes": 0,
+      "id": 5
+    },
+    {
+      "comment": "hi",
+      "likes": 3,
+      "id": 6
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
