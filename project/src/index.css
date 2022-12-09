@@ -103,6 +103,11 @@ h2 {
   background-color: var(--grey);
 }
 
+#sbDash {
+  text-shadow: 2px 2px 5px white;
+  
+}
+
 #dashboard-title {
   background-color: var(--burnt-orange);
   display: flex;
@@ -114,6 +119,7 @@ h2 {
   line-height: 1px;
   border-top-right-radius: 5px;
   border-bottom: 1px solid;
+  
 }
 
 .random-section {
@@ -130,6 +136,7 @@ h2 {
   margin-top: 1.5rem;
   font-size: larger;
   line-height: 1.5;
+  box-shadow: 10px 10px 5px lightblue;
 }
 
 .health-snap {
