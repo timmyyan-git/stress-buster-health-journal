@@ -82,6 +82,7 @@ function JournalForm ({onUpdateJournalList, onRandomQuote}){
             </input>
             </div>
 
+               
                <br/>
             
                <div className="questions">
@@ -150,7 +151,7 @@ function JournalForm ({onUpdateJournalList, onRandomQuote}){
        <br/>
        <br/>
            
-            <button> Submit</button>
+            <button id="journalButton"> Submit</button>
             
       </section>
       </div>

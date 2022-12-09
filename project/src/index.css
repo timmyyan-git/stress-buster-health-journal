@@ -336,10 +336,10 @@ nav {
   border-radius: 25px;
   margin-left: 10em;
   margin-right: 10em;
-  margin-top: 1rem;
   background-color: var(--seafoam-green);
   color: white;
   text-align: center;
+  margin-top: 1rem;
 }
 
 #quote {
@@ -375,6 +375,7 @@ nav {
   height: 70px;
   margin-left: 7em;
   margin-bottom: 2em ;
+  margin-top: 1em;
   background-color: var(--grey);
   
 }
@@ -382,17 +383,32 @@ nav {
 
 
 .question-snap {
+  background-color: #079aa8;
   display: flex;
   flex-wrap: wrap;
   row-gap: 10px;
-  column-gap: 2em;
+  column-gap: 1em;
   text-align: center;
   margin-bottom: 1em;
+  margin-top: 30rem;
 }
 
 #type,
 #time {
   margin-top: 10px;
   
+}
+#journalButton {
+  height: 30px;
+  position: absolute;
+  margin-top: 40em;
+  margin-left: 95em;
+  
+}
+
+#writing {
+
+  
 
 }
+
