@@ -45,7 +45,7 @@ function Dashboard ({onJournalList}){
     return (
         <div>
             <section id="dashboard-title">
-            <h2><b>Your </b><em>Stress Buster</em> <b>Dashboard</b></h2>
+            <h2><b>Your </b><em id="sbDash">Stress Buster</em> <b>Dashboard</b></h2>
             <p>Daily Average of Stress Busting Habits</p>
             </section>
             <section className="health-snap">
