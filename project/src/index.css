@@ -36,11 +36,30 @@ h2 {
 
 .header {
   background-color: var(--light-seafoam-green);
-  display: flex; 
+  max-height: 10em;
+}
+#subHeading {
+  position: absolute;
+  top: 5rem;
+  left: 15rem;
+  right: 2px;
+  font-size: 20px;
+  text-shadow: 3px 3px 5px white;
+}
+
+#spicyTitle {
+  font-size: 3em;
+  text-shadow: 3px 5px 5px white;
+  position: absolute;
+  top: 5px;
+  left: 175px;
+  right: 2px;
+
+  height: 100px;
 }
 
 #logo {
-  max-width: 20%;
+  max-height: 10em;
 }
 
 
@@ -283,11 +302,47 @@ h2 {
 }
 
 
-
 /* Nav Bar */
 
 nav a.active {
-  background-color: black;
+  background-color: var(--burnt-orange);
   color: white;
 }
 
+nav {
+  color: white;
+  position:absolute;
+  left: 57rem;
+  top:8.5rem;
+}
+
+
+#link {
+  padding-left: 1rem;
+  font-size: large;
+}
+  
+
+#prompt {
+  flex-basis: 33.333333%;
+  padding: .5rem;
+  border-radius: 25px;
+  margin-left: 10em;
+  margin-right: 10em;
+  margin-top: 1rem;
+  background-color: var(--seafoam-green);
+  color: white;
+  text-align: center;
+}
+
+#quote {
+  padding: .5rem;
+  border-radius: 25px;
+  margin-left: 15em;
+  margin-right: 15em;
+ 
+  margin-top: 1rem;
+  background-color: var(--grey-blue);
+  color: white;
+  text-align: center;
+}

@@ -9,10 +9,10 @@ function handleLinkClick (e) {
 
     return (
         <nav>
-            <NavLink exact to="/">MainPage</NavLink>
-            <NavLink to="/NewJournal"> New Journal </NavLink>
-            <NavLink to="/PreviousJournals">Journal List</NavLink>
-            <NavLink to="/Forum">Stress-less Community</NavLink>
+            <NavLink id="link" exact to="/">MainPage</NavLink>
+            <NavLink id="link" to="/NewJournal"> New Journal </NavLink>
+            <NavLink id="link" to="/PreviousJournals">Journal List</NavLink>
+            <NavLink id="link" to="/Forum">Stress-less Community</NavLink>
         </nav>
     );
         

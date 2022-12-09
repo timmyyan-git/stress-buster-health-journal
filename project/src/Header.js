@@ -6,13 +6,12 @@ import logo from "./assets/Logo.jpg"
 function Header ({onChangePage}){
 
     return (
-        <div>
-            <div className= "header"> 
+        <div className= "header">
             <img id="logo" src={logo} alt="logo"></img>
-            <h1>Stress Buster</h1>
-            <h4> helping you cope with stress, one day at a time</h4>
-        </div> 
+            <h1 id="spicyTitle">Stress Buster</h1>
+            <h3 id="subHeading"> Helping you cope with stress, one day at a time</h3>
         <NavBar className="header" onChangePage={onChangePage} />
+        
         </div>
     )
 }
