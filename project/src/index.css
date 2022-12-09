@@ -368,6 +368,7 @@ nav {
 #journalForm {
   background-color: var(--dark-green);
   margin-top: 3em;
+  border-radius: 25px;
 }
 
 .questions {
@@ -381,6 +382,7 @@ nav {
   margin-bottom: 2em ;
   margin-top: 1em;
   background-color: var(--grey);
+  box-shadow: 1px 1px 1gpx lightblue;
   
 }
 
@@ -395,6 +397,7 @@ nav {
   text-align: center;
   justify-content: center;
   border-radius: 25px;
+  
   margin-top: 0rem;
 }
 
@@ -420,11 +423,12 @@ nav {
 #writing {
 
 width: 70%;  
+border-radius: 25px;
 
 }
 
 #journalDate {
-  margin-left: 18rem;
+  margin-left: 13rem;
   background: var(--grey);
   outline: none;
   border: none;
@@ -433,11 +437,12 @@ width: 70%;
 }
 
 #journalWritingLabel {
-  margin-left: 18rem;
+  margin-left: 13rem;
   color:#fff;
-  font-size: 20px;
+  font-size: 28px;
   margin-top: 2rem;
   display: block;
+  text-shadow: 2px 2px 5px white;
 }
 
 

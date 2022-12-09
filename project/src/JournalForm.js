@@ -62,7 +62,7 @@ function JournalForm({ onUpdateJournalList, onRandomQuote }) {
         ></input>
         <input type="hidden" name="quote" defaultValue={quote}></input>
         <br></br>
-        <label id="journalWritingLabel">Let it out...</label>
+        <label id="journalWritingLabel">Breathe in ... Let it out...</label>
         <br />
         <br />
         <div className="text-align-center">
