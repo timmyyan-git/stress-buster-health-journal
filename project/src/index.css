@@ -32,6 +32,10 @@ h2 {
   padding-left: 4rem;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 /*  header css */
 
 .header {
@@ -373,7 +377,7 @@ nav {
   border-radius: 25px;
   width: 20px;
   height: 70px;
-  margin-left: 7em;
+
   margin-bottom: 2em ;
   margin-top: 1em;
   background-color: var(--grey);
@@ -389,8 +393,9 @@ nav {
   row-gap: 10px;
   column-gap: 1em;
   text-align: center;
-  margin-bottom: 1em;
-  margin-top: 30rem;
+  justify-content: center;
+  border-radius: 25px;
+  margin-top: 0rem;
 }
 
 #type,
@@ -400,15 +405,41 @@ nav {
 }
 #journalButton {
   height: 30px;
-  position: absolute;
-  margin-top: 40em;
-  margin-left: 95em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   
+  
+
+  
+}
+
+.clr-blue {
+  background-color: var(--cyan);
 }
 
 #writing {
 
-  
+width: 70%;  
 
 }
+
+#journalDate {
+  margin-left: 18rem;
+  background: var(--grey);
+  outline: none;
+  border: none;
+  font-size: 20px;
+  margin-top: 2rem;
+}
+
+#journalWritingLabel {
+  margin-left: 18rem;
+  color:#fff;
+  font-size: 20px;
+  margin-top: 2rem;
+  display: block;
+}
+
+
+
 
