@@ -67,60 +67,93 @@ function JournalForm ({onUpdateJournalList, onRandomQuote}){
             <br/><br/>
             <textarea type="text" name="journalWriting" id="writing"  onChange= {onFormChange}/>
             <br></br>
+
+            
+            <div id="journalForm" >
+
+
+
+
+            <section className="question-snap">
+                <div className="questions">
             <label htmlFor="type">How many hours did you sleep?</label>
+            <br/>
             <input type="number" id="time"  step="1" min="0" max="24"  name="sleep" onChange= {onFormChange}>
             </input>
+            </div>
 
                <br/>
-
+            
+               <div className="questions">
             <label htmlFor="type">Time in minutes spent exercising:</label>
+            <br/>
             <input type="number" min="0" id="type" name="exercise"  onChange= {onFormChange}>
             </input>
+            </div>
 
                 <br/>
-
+                <div className="questions">
             <label htmlFor="type">Time in minutes spent in a green space:</label>
+            <br/>
             <input type="number" min="0" id="type" name="greenSpace"  onChange= {onFormChange}>
             </input>
+                </div>
 
             <br/>
 
+            <div className="questions">
             <label htmlFor="type">Number of positive social interactions:</label>
+            <br/>
             <input type="number" min="0" id="type" name="social"  onChange= {onFormChange}>
             </input>
-        
+            </div>
 
             <br/>
 
+            <div className="questions">
             <label htmlFor="type">Number of mindful breaks:</label>
+            <br/>
             <input type="number" min="0" id="type" name="mindful"  onChange= {onFormChange}>
-            </input>
+            </input> 
+            </div>
 
             <br/>
 
+            <div className="questions">
             <label htmlFor="type">Reflect and rate how balanced your meals were today:</label>
+            <br/>
             <input type="number" min="0" max="10" id="type" name="nutrition"  onChange= {onFormChange}>
             </input>
+            </div>
 
             <br/>
-
+            
+            <div className="questions">
             <label htmlFor="type">Total media consumption:</label>
+            <br/>
             <input type="number" min="0" id="type" name="mentalHealth"  onChange= {onFormChange}>
             </input>
+            </div>
 
             <br/>
 
+            <div className="questions">
             <label htmlFor="type">Did you attend therapy?</label>
+            <br/>
             <select id="type" name="therapy" onChange= {onFormChange}>
              <option>Select an Option</option>
              <option>Yes</option>
             <option> No</option>
             </select>
-       
+            </div>
 
        <br/>
        <br/>
-            <button> submit</button>
+           
+            <button> Submit</button>
+            
+      </section>
+      </div>
       </form>
         </div>
     )

@@ -6,6 +6,8 @@ const commentStyle = {
         padding: "1rem",
         display: "flex",
         marginBottom: "10px",
+        width: "50%",
+        backgroundColor: "lightblue",
     },
     likes: {
         marginLeft: "auto",

@@ -1,23 +1,7 @@
 import { useState, useEffect } from "react";
 import CommentForm from "./CommentForm";
 import Comment from "./Comment";
-
-const styles = {
-    container: {
-        margin: "30px",
-    },
-    commentsContainer: {
-        padding: "10px 15px",
-        border: "1px solid black",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginTop: "20px",
-    },
-    comments: {
-        width: "100%",
-    },
-};
+import styles from "./forum.module.css"; 
 
 function Forum() {
     const [comments, setComments] = useState(null);
@@ -72,13 +56,16 @@ function Forum() {
     };
 
     return (
-        <div style={styles.container}>
-            Forum
+        <div className={styles.container}>
+            <h2 className={styles.pageTitle}>Forum</h2>
             <div>
-                <CommentForm addComment={addComment} />
-                <div style={styles.commentsContainer}>
+                <div className={styles.commentBox}>
+                    <h1 className={styles.commentTitle}>Post a Comment</h1>
+                    <CommentForm className={styles.commentForm} addComment={addComment} />
+                </div>
+                <div className={styles.commentsContainer}>
                     <h2>Comments</h2>
-                    <div style={styles.comments}>{renderComments()}</div>
+                    <div className={styles.comments}>{renderComments()}</div>
                 </div>
             </div>
         </div>

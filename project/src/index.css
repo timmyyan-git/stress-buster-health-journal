@@ -353,4 +353,46 @@ nav {
   text-align: center;
   font-size: large;
 }
+#entirePageColor{
+  background-color: var(--cyan);
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 2em;
+  border-radius: 10px;
+}
 
+#journalForm {
+  background-color: var(--dark-green);
+  margin-top: 3em;
+}
+
+.questions {
+  flex-basis: 33.333333%;
+  border: 1px solid black;
+  padding: .5rem;
+  border-radius: 25px;
+  width: 20px;
+  height: 70px;
+  margin-left: 7em;
+  margin-bottom: 2em ;
+  background-color: var(--grey);
+  
+}
+
+
+
+.question-snap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#type,
+#time {
+  margin-top: 10px;
+  
+
+}
