@@ -2,23 +2,22 @@ import React from "react";
 
 const commentStyle = {
     container: {
-        border: "1px black solid",
-        padding: "1rem",
+        padding: "20px",
         display: "flex",
-        marginBottom: "10px",
-        width: "50%",
-        backgroundColor: "lightblue",
+        marginBottom: "20px",
+        borderRadius: "30px",
+        width: "90%",
+        backgroundColor: "#79b0ab",
+        alignItems: "center",
     },
     likes: {
         marginLeft: "auto",
         display: "flex",
-        width: "200px",
         justifyContent: "space-between",
         alignItems: "center",
     },
     like: {
         height: "30px",
-        width: "100px",
     },
 };
 
@@ -27,7 +26,13 @@ export default function Comment({ comment, updateLike }) {
         <div style={commentStyle.container}>
             <div>{comment.comment}</div>
             <div style={commentStyle.likes}>
-                <div>Likes: {comment.likes}</div>
+                <div
+                    style={{
+                        marginRight: "5px",
+                    }} 
+                >
+                    {comment.likes}
+                </div>
                 <button style={commentStyle.like} onClick={() => updateLike(comment)}>
                     Like
                 </button>

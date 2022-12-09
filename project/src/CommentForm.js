@@ -5,11 +5,14 @@ const styles = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        padding: "0 50px",
     },
     textBox: {
         marginBottom: "20px",
-        width: "50%",
+        width: "100%",
+        padding: "10px 20px",
         borderRadius: "30px",
+        resize: "none",
     },
     submit: {
         height: "40px",
@@ -18,9 +21,6 @@ const styles = {
         borderRadius: "30px",
         color: "white",
     },
-    // textarea::placeholder: { 
-        
-    // }
 };
 
 function CommentForm({ addComment }) {
@@ -30,7 +30,7 @@ function CommentForm({ addComment }) {
         <div style={styles.container}>
             <textarea
                 style={styles.textBox}
-                rows="4"
+                rows="5"
                 cols="100"
                 placeholder="Enter comment here..."
                 onChange={(e) => setComment(e.target.value)}

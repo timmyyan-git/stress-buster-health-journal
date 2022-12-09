@@ -4,17 +4,22 @@
 }
 
 .commentsContainer {
-    padding: "10px 15px";
-    border: "1px solid black";
+    padding: "15px 10px";
     display: "flex";
     flex-direction: "column";
     align-items: "center";
     margin-top: "20px";
-    margin: 0 auto;
+    justify-content: center;
+    width: 50%;
+    border-radius: 20px;
+    background-color: #4598a6;
 }
 
 .comments {
     width: "100%";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pageTitle {
@@ -25,11 +30,10 @@
 }
 
 .commentBox {
-    background-color: darkblue;
+    background-color: #4e627d;
     width: 50%;
-    margin: 0 auto;
     border-radius: 20px;
-    padding: 10px;
+    padding: 15px 10px;
 }
 
 .commentForm {
@@ -40,4 +44,12 @@
 
 .commentTitle {
     color: white;
+    margin: 0 0 5px 35px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

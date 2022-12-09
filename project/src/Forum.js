@@ -58,13 +58,21 @@ function Forum() {
     return (
         <div className={styles.container}>
             <h2 className={styles.pageTitle}>Forum</h2>
-            <div>
+            <div className={styles.center}>
                 <div className={styles.commentBox}>
                     <h1 className={styles.commentTitle}>Post a Comment</h1>
                     <CommentForm className={styles.commentForm} addComment={addComment} />
                 </div>
                 <div className={styles.commentsContainer}>
-                    <h2>Comments</h2>
+                    <h1
+                        style={{
+                            color: "white",
+                            alignSelf: "flex-start",
+                            margin: "0 0 5px 35px",
+                        }}
+                    >
+                        Comments
+                    </h1>
                     <div className={styles.comments}>{renderComments()}</div>
                 </div>
             </div>
